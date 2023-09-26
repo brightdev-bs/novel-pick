@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p>
+          안녕하세요? 노블픽에 오신 것을 환영합니다!
+        </p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
