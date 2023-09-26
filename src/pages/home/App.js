@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          안녕하세요? 노블픽에 오신 것을 환영합니다!
+          안녕하세요? 노블픽에 오신 것을 환영합니다!  {/* 바뀔수 있음 */}
         </p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
