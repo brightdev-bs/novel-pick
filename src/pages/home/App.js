@@ -1,27 +1,18 @@
-import logo from '../../assets/images/logo.svg';
-import './App.css';
+import QuestionOne from "../question/Question_one";
+import { Link } from "react-router-dom";
+import "./App.css";
+import React, { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          안녕하세요? 노블픽에 오신 것을 환영합니다!  {/* 바뀔수 있음 */}
-        </p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>안녕하세요, 노블픽입니다.</p>
+
+      <p>
+        질문에 응답하고 답을 얻으시려면 <Link>이곳</Link>을 클릭하세요
+      </p>
+      <QuestionOne />
+    </>
   );
 }
 
