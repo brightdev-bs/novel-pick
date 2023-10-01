@@ -1,7 +1,7 @@
-import QuestionOne from "../question/Question_one";
 import { Link } from "react-router-dom";
 import "./App.css";
 import React, { Fragment } from "react";
+import QuestionOne from "../components/Question_one";
 
 function App() {
   return (
