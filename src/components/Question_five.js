@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function QuestionFive() {
   // 이곳에 기능적인 부분들이 있으면 넣어준다
 
@@ -9,6 +11,15 @@ function QuestionFive() {
       <p>b. 그렇다.</p>
       <p>c. 보통이다.</p>
       <p>d. 아니다.</p>
+      <button>
+        <Link to="/questionFour">이전</Link>
+      </button>
+      <button>
+        <Link to="/">처음으로</Link>
+      </button>
+      <button>
+        <Link to="/questionSix">다음</Link>
+      </button>
     </div>
   );
 }
