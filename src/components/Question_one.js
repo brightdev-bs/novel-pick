@@ -16,7 +16,7 @@ function QuestionOne() {
           border: "0px",
         }}
       >
-        나는 웹소설의 전개가 빠를수록 좋다.
+        1. 나는 웹소설의 전개가 빠를수록 좋다.
       </button>
       <br></br>
       <button

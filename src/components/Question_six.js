@@ -6,11 +6,71 @@ function QuestionSix() {
   //이곳에서는 화면에 표시할 부분을 JSX 문법을 이용하여 넣어준다
   return (
     <div>
-      <p>6. 배경이 현대였으면 좋겠다.</p>
-      <p>a. 매우 그렇다.</p>
-      <p>b. 그렇다.</p>
-      <p>c. 상관없다.</p>
-      <p>d. 현대가 아니였으면 좋겠다.</p>
+      <button
+        style={{
+          width: "300px",
+          minHeight: "80px",
+          fontSize: "15pt",
+          marginTop: "20px",
+          background: "#34AB64",
+          border: "0px",
+        }}
+      >
+        6. 배경이 현대였으면 좋겠다.
+      </button>
+      <br></br>
+      <button
+        style={{
+          width: "300px",
+          minHeight: "80px",
+          fontSize: "15pt",
+          marginTop: "20px",
+          background: "#34AB64",
+          border: "0px",
+        }}
+      >
+        a. 매우 그렇다.
+      </button>
+      <br></br>
+      <button
+        style={{
+          width: "300px",
+          minHeight: "80px",
+          fontSize: "15pt",
+          marginTop: "20px",
+          background: "#34AB64",
+          border: "0px",
+        }}
+      >
+        b. 그렇다.
+      </button>
+      <br></br>
+      <button
+        style={{
+          width: "300px",
+          minHeight: "80px",
+          fontSize: "15pt",
+          marginTop: "20px",
+          background: "#34AB64",
+          border: "0px",
+        }}
+      >
+        c. 상관없다.
+      </button>
+      <br></br>
+      <button
+        style={{
+          width: "300px",
+          minHeight: "80px",
+          fontSize: "15pt",
+          marginTop: "20px",
+          background: "#34AB64",
+          border: "0px",
+        }}
+      >
+        d. 현대가 아니였으면 좋겠다.
+      </button>
+      <br></br>
       <button>
         <Link to="/questionFive">이전</Link>
       </button>
