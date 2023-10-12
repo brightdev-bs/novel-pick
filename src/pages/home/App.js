@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, Fragment } from "react";
 import Main from "../../components/Main";
 import QuestionOne from "../../components/Question_one";
