@@ -8,7 +8,7 @@ import Wrapper from "../common/Wrapper";
 
 const Question = () => {
   const [questionNo, setQuestionNo] = React.useState(0);
-  let totalScore = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  let totalScore = [0, 0, 0, 0, 0, 0, 0, 0];
 
   console.log(QuestionData);
 
