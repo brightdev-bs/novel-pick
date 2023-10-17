@@ -8,7 +8,8 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import { ResultData } from "../assets/data/resultdata";
 // import CopyUrl from '../component/CopyUrl'
 import KaKaoShareButton from "../components/KaKaoShareButton";
-// import Twitter from "../assets/img/logo/twitter.png";
+import NaverSeriesLogo from "../assets/images/naver_series_logo.png";
+import KakaoPageLogo from "../assets/images/kakao_page_logo.png";
 /* import CopyToClipboard from "react-copy-to-clipboard";
 import CopyLink from "../assets/img/logo/link.png"; */
 import Wrapper from "../common/Wrapper";
@@ -124,7 +125,7 @@ const Result = () => {
                     window.open(ResultData[parse_idx].url1);
                   }}
                 >
-                  {/* <img src={LaftelLogo} alt="logo2" width="100" /> */}
+                  <img src={KakaoPageLogo} alt="logo2" width="100" />
                   <div
                     className="my-4"
                     style={{
@@ -134,7 +135,7 @@ const Result = () => {
                       width: "100%",
                     }}
                   >
-                    카카오스토리
+                    카카오페이지
                   </div>
                 </button>
               ) : (
@@ -155,7 +156,7 @@ const Result = () => {
                     window.open(ResultData[parse_idx].url2);
                   }}
                 >
-                  {/* <img src={NetflixLogo} alt="logo2" width="100" /> */}
+                  <img src={NaverSeriesLogo} alt="logo2" width="100" />
                   <div
                     className="my-4"
                     style={{
@@ -173,7 +174,7 @@ const Result = () => {
               )}
             </ButtonGroup>
           </Platform>
-          {/* <KakaoShareButton data={ResultData[parse_idx]} /> */}
+          <KaKaoShareButton data={ResultData[parse_idx]} />
           <ButtonGroup>
             {/* <TwitterShareButton data={parse_idx} /> */}
 
@@ -258,7 +259,7 @@ const Header = styled.div`
   text-align: center
   margin: auto;
   justify-content: center;
-  background-color: #34ab64;
+  background-color: #100F06;
   color: white;
   
 `;

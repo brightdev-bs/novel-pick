@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ProgressBar, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { QuestionData } from "../assets/data/questiondata";
 
 import Wrapper from "../common/Wrapper";
@@ -79,7 +79,7 @@ const Question = () => {
                 minHeight: "80px",
                 fontSize: "15pt",
                 marginTop: "20px",
-                background: "#34AB64",
+                background: "#100F06",
                 border: "0px",
               }}
             >
@@ -92,7 +92,7 @@ const Question = () => {
                 minHeight: "80px",
                 fontSize: "15pt",
                 marginTop: "20px",
-                background: "#34AB64",
+                background: "#100F06",
                 border: "0px",
               }}
             >
@@ -105,7 +105,7 @@ const Question = () => {
                 minHeight: "80px",
                 fontSize: "15pt",
                 marginTop: "20px",
-                background: "#34AB64",
+                background: "#100F06",
                 border: "0px",
               }}
             >
@@ -118,12 +118,16 @@ const Question = () => {
                 minHeight: "80px",
                 fontSize: "15pt",
                 marginTop: "20px",
-                background: "#34AB64",
+                background: "#100F06",
                 border: "0px",
               }}
             >
               {QuestionData[questionNo].a[3].answer}
             </Button>
+            <br></br>
+            <button>
+              <Link to="/">처음으로</Link>
+            </button>
           </ButtonGroup>
           <BarWrap>
             <ProgressBar
@@ -173,7 +177,7 @@ const Contents = styled.div`
   flex-direction: column;
   width: 448px;
   height: 100vh;
-  background-color: white;
+  background-image: linear-gradient(to bottom, #fff27b, #e1e8ea);
 `;
 
 const BarWrap = styled.div`

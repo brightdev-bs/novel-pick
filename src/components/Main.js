@@ -35,7 +35,7 @@ const Main = () => {
             }}
             onClick={handleClickButton}
           >
-            Get Started
+            시작!
           </Button>
         </Contents>
         {/* <Footer />  */}
@@ -60,7 +60,7 @@ const Contents = styled.div`
   flex-direction: column;
   width: 448px;
   height: 100vh;
-  background: #34ab64;
+  background-image: linear-gradient(to bottom, #fff27b, #e1e8ea);
 `;
 
 const Title = styled.div`
@@ -68,14 +68,14 @@ const Title = styled.div`
   font-weight: bold;
   margin-top: 40px;
   font-family: "MICEGothic Bold";
-  color: white;
+  color: black;
 `;
 
 const SubTitle = styled.div`
   font-size: 20pt;
   margin-top: 25px;
   font-family: "Pretendard-Regular";
-  color: white;
+  color: black;
 `;
 
 const LogoImage = styled.div`

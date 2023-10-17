@@ -4,7 +4,7 @@ import KakaoIcon from "../assets/images/kakaotalk_sharing_btn_small.png";
 const { Kakao } = window;
 
 const KakaoShareButton = ({ data }) => {
-  const url = "http://localhost:3000/";
+  const url = "http://localhost:3000";
   const resultUrl = window.location.href;
   console.log("kakao data", data);
   console.log("ddd", resultUrl, url);
