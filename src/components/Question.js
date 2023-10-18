@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { ProgressBar, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { QuestionData } from "../assets/data/questiondata";
-
 import Wrapper from "../common/Wrapper";
 
 const Question = () => {
