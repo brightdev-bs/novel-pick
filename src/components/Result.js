@@ -10,8 +10,6 @@ import { ResultData } from "../assets/data/resultdata";
 import KaKaoShareButton from "../components/KaKaoShareButton";
 import NaverSeriesLogo from "../assets/images/naver_series_logo.png";
 import KakaoPageLogo from "../assets/images/kakao_page_logo.png";
-/* import CopyToClipboard from "react-copy-to-clipboard";
-import CopyLink from "../assets/img/logo/link.png"; */
 import Wrapper from "../common/Wrapper";
 import Footer from "../common/Footer";
 
@@ -64,9 +62,6 @@ const Result = () => {
   // let copy_link = link + "?" + parse_idx;
   let copy_link = tmp + "?" + parse_idx; // using debug, not publish
 
-  const alertMessage = () => {
-    alert("내 웹소설 추천 결과가 클립보드에 담겼어요!");
-  };
   return (
     <>
       <Wrapper>
@@ -82,9 +77,13 @@ const Result = () => {
             나의 취향 웹소설은...?
           </Header>
           <Title style={{ fontFamily: "MICEGothic Bold" }}>결과 보기</Title>
-          {/* <LogoImage>
-            
-          </LogoImage> */}
+          <LogoImage>
+            <img
+              className="col-lg-10 col-md-8 mx-3 col-sm-8 col-8 rounded-3"
+              src={ResultData[parse_idx].image}
+              alt="소설사진"
+            />
+          </LogoImage>
           <Desc>
             <div>내 웹소설취향은</div>
             <div
@@ -259,8 +258,8 @@ const Header = styled.div`
   text-align: center
   margin: auto;
   justify-content: center;
-  background-color: #100F06;
-  color: white;
+  background-color: #fff27b;
+  color: black;
   
 `;
 
@@ -271,7 +270,7 @@ const Contents = styled.div`
   flex-direction: column;
   width: 448px;
   font-family: "Pretendard-Regular";
-  background-color: white;
+  background-image: linear-gradient(to bottom, #fff27b, #e1e8ea);
 `;
 
 const Desc = styled.div`
