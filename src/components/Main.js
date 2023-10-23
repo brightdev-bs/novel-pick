@@ -2,6 +2,7 @@ import React from "react";
 //css-in-js
 import styled from "styled-components";
 import Button from "react-bootstrap/Button";
+import MainImage from "../assets/images/candidate2.png";
 import { useNavigate } from "react-router-dom";
 import "../pages/home/App.css";
 import Wrapper from "../common/Wrapper";
@@ -19,9 +20,13 @@ const Main = () => {
         <Contents>
           <Title>Novel-Pic</Title>
           <SubTitle>웹소설 추천 서비스</SubTitle>
-          {/* <LogoImage>
-            <img className="col-lg-10 col-md-8 mx-3 col-sm-8 col-8" alt="..." />
-          </LogoImage> */}
+          <LogoImage>
+            <img
+              className="col-lg-10 col-md-8 mx-3 col-sm-8 col-8"
+              src={MainImage}
+              alt="..."
+            />
+          </LogoImage>
           <Button
             className="start-btn"
             variant="dark"
